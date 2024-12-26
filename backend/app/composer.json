@@ -1,0 +1,25 @@
+{
+    "name": "vendor/ebd",
+    "description": "dev",
+    "type": "n",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jose Ribeiro",
+            "email": "joseribeirocsr@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "slim/slim": "^4.10",
+        "slim/psr7": "^1.3",
+        "firebase/php-jwt": "^5.5",
+        "vlucas/phpdotenv": "^5.4",
+        "monolog/monolog": "^2.3"
+    }
+}
