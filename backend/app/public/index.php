@@ -1,17 +1,12 @@
-<?php 
-require '../vendor/autoload.php';
-
+<?php
 use Slim\Factory\AppFactory;
-use App\Config\Database;
-use App\Controllers\UserController;
+
+require __DIR__ . '/../vendor/autoload.php';
 
 $app = AppFactory::create();
 
-// Conecta ao banco de dados
-$db = Database::connect();
+// Carregar as rotas
+require __DIR__ . '/../src/Routes/userRoutes.php';
 
-// Cria o controlador passando a conexão do banco de dados
-$userController = new UserController($db);
-
-// Execute a aplicação
+// Rodar a aplicação
 $app->run();
